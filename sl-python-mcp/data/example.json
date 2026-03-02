@@ -1,0 +1,56 @@
+[
+  {
+    "id": "inc-2025-02-uav-jam-baltic",
+    "category": "incident",
+    "title": "EW interference affecting UAV C2 links during ISR sortie",
+    "region": ["Baltic Sea"],
+    "classification": "RESTRICTED",
+    "confidence": "medium",
+    "systems": ["UAV-X9", "SATCOM-LINK-A"],
+    "tags": ["electronic-warfare", "jamming", "c2", "isr"],
+    "owner": "joint-operations",
+    "createdAt": "2025-02-11T04:22:00Z",
+    "lastUpdated": "2025-02-12T19:40:00Z",
+    "body": "During routine ISR operations, multiple UAV-X9 platforms experienced intermittent loss of command-and-control. Signal analysis suggests broadband interference consistent with adaptive jamming. No airframe losses occurred. Sorties were paused pending updated CONOPS for degraded comms."
+  },
+  {
+    "id": "thr-2025-01-ew-trends-europe",
+    "category": "threat_report",
+    "title": "Regional EW trends: adaptive jamming and spectrum reconnaissance",
+    "region": ["Eastern Europe"],
+    "classification": "SECRET",
+    "confidence": "medium",
+    "tags": ["electronic-warfare", "signals", "trend-analysis"],
+    "owner": "defence-intelligence",
+    "createdAt": "2025-01-28T09:00:00Z",
+    "lastUpdated": "2025-02-05T15:10:00Z",
+    "body": "Observed patterns indicate increasing sophistication in adaptive jamming and spectrum monitoring. The assessed capability includes dynamic waveform selection and time-on-target optimization. Confidence is limited by sparse intercept coverage and inconsistent telemetry from partner reporting."
+  },
+  {
+    "id": "cap-017-uav-resilience",
+    "category": "capability_assessment",
+    "title": "UAV resilience to electronic attack: gaps and mitigations",
+    "region": ["Global"],
+    "classification": "RESTRICTED",
+    "confidence": "high",
+    "systems": ["UAV-X9"],
+    "tags": ["uav", "resilience", "electronic-warfare", "mitigation"],
+    "owner": "capability-development",
+    "createdAt": "2024-12-14T13:30:00Z",
+    "lastUpdated": "2025-01-10T10:05:00Z",
+    "body": "UAV-X9 shows limited resilience against sustained broadband jamming. Frequency hopping mitigates narrowband interference but is insufficient against adaptive adversaries. Recommended: multi-path comms, onboard autonomy for degraded mode, mission planning that assumes intermittent C2."
+  },
+  {
+    "id": "pol-009-ai-tooling",
+    "category": "policy",
+    "title": "Policy: AI-assisted analysis, logging, and tool access constraints",
+    "region": ["Global"],
+    "classification": "UNCLASSIFIED",
+    "confidence": "high",
+    "tags": ["ai", "governance", "audit", "policy"],
+    "owner": "strategy-and-policy",
+    "createdAt": "2024-10-02T08:00:00Z",
+    "lastUpdated": "2024-11-15T16:45:00Z",
+    "body": "AI systems may access only approved read-only data sources and must not generate operational directives. All interactions with RESTRICTED or higher material must be logged and auditable. Outputs must express uncertainty when confidence is low or medium."
+  }
+]
