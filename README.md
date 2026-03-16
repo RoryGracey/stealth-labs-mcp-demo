@@ -35,4 +35,14 @@ npm i
 npm run dev
 ```
 
+## Example Questions
+
+```text
+Find entries about jamming and summarize likely implications. Include entry ids.
+
+What policy constraints apply to AI-assisted analysis?
+
+Only use RESTRICTED or below: what do we know about UAV C2 disruption?
+```
+
 ***PLEASE NOTE - Environment variables must be inserted into .env in root of NextJS Directory and the MCP Server must be running in order to use the NextJS Chat.***

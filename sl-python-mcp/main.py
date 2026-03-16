@@ -44,6 +44,30 @@ def matches(knowledge_entry: KnowledgeEntry, query: str) -> bool:
     hay = " ".join([knowledge_entry["title"], knowledge_entry["body"], " ".join(knowledge_entry["tags"])]).lower()
     return q in hay
 
+@mcp.tool()
+def def_list_entries(classification_max: Classification = "SECRET") -> dict:
+    entries = load_knowledge_entries()
+    max_rank = classification_rank(classification_max)
+
+    items = []
+    for k in entries:
+        if classification_rank(k["classification"]) > max_rank:
+            continue
+        items.append(
+            {
+                "id": k["id"],
+                "title": k["title"],
+                "category": k["category"],
+                "classification": k["classification"],
+                "region": k["region"],
+                "tags": k["tags"],
+                "owner": k["owner"],
+                "lastUpdated": k["lastUpdated"],
+            }
+        )
+
+    items.sort(key=lambda x: x["lastUpdated"], reverse=True)
+    return {"entries": items}
 
 @mcp.tool()
 def def_search(
